@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mini_nft_marketplace/Constant/assets_image_manager.dart';
 
 class CustomImageOnBoardingScreen extends StatelessWidget {
   const CustomImageOnBoardingScreen({
@@ -8,7 +9,7 @@ class CustomImageOnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "assets/images/on_boarding_background.png",
+      AssetsImageManager.onBoardingBackgroundImage,
       width: double.infinity,
       height: double.infinity,
       fit: BoxFit.cover,

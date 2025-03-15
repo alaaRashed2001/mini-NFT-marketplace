@@ -2,12 +2,19 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/Constant/app_color.dart';
+import 'package:mini_nft_marketplace/Helpers/navigator_helper.dart';
+import 'package:mini_nft_marketplace/Screens/home_screen.dart';
 
-class CustomCardOnBoardingScreen extends StatelessWidget {
+class CustomCardOnBoardingScreen extends StatefulWidget {
   const CustomCardOnBoardingScreen({
     super.key,
   });
 
+  @override
+  State<CustomCardOnBoardingScreen> createState() => _CustomCardOnBoardingScreenState();
+}
+
+class _CustomCardOnBoardingScreenState extends State<CustomCardOnBoardingScreen> with NavigatorHelper {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -67,7 +74,9 @@ class CustomCardOnBoardingScreen extends StatelessWidget {
                       sigmaY: 100,
                     ),
                     child: MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        jump(context, screen: const HomeScreen(), replace: true);
+                      },
                       child: const Text(
                         'Get started now',
                         style: TextStyle(
