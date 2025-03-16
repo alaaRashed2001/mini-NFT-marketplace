@@ -20,7 +20,7 @@ return const MaterialApp(
 }
 /// git init
 // git add .
-// git commit -m "Categories Home Screen"
+// git commit -m "Trending Collection Home Screen"
 // git branch -M main
 // git remote add origin https://github.com/alaaRashed2001/mini-NFT-marketplace.git
 // git push -u origin main
